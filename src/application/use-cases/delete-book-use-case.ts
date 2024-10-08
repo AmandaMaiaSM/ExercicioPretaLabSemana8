@@ -6,6 +6,11 @@ export class DeleteBookUseCase {
   ) {}
 
   async execute(id: string): Promise<void> {
+    
+    if (!id) {
+      throw new Error('ID inválido');
+    }
     await this.bookRepository.delete(id);
+
   }
 }

@@ -36,9 +36,11 @@ export class BookController {
   }
 
   async delete(req: Request, res: Response) {
+    
     const { id } = req.params;
     const booksFiltered = await this.deleteBooksUseCase.execute(id);
     res.json({ message: `Livro com ${id} deletado com sucesso`, booksFiltered });
-  }
+  
+    }
 }
 

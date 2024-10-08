@@ -1,0 +1,6 @@
+- Criar os testes unitários no projeto desenvolvido com a relação de livros
+- Escrever todos os casos de testes para os use-cases relacionados ao Book
+- Material de referência
+
+- https://github.com/nathsouzadev/tdd-practice
+- https://github.com/nathsouzadev/test-pretalab

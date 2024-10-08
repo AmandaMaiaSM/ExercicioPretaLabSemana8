@@ -8,7 +8,8 @@ export class ListAllBooksUseCase {
   ) {}
 
   async execute(): Promise<Array<Book>> {
-    return await this.bookRepository.findAll();
+    const books = await this.bookRepository.findAll();
+    return books.length > 0 ? books : [];
   }
 
 }
